@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Hassan (Data Engineer)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffa500;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        section h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            position: relative;
+            color: #333;
+        }
+
+        section h1::after {
+            content: "";
+            width: 100px;
+            height: 4px;
+            background-color: #4a90e2;
+            display: block;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        footer {
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+            font-size: 1.1em;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        ul li::before {
+            content: "•";
+            color: #ffa500;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ffa500;
+        }
+
+        .shape {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #ffa500;
+            opacity: 0.7;
+            border-radius: 50%;
+            animation: move 20s infinite;
+        }
+
+        .shape:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            animation-duration: 20s;
+        }
+
+        .shape:nth-child(2) {
+            top: 30%;
+            left: 70%;
+            animation-duration: 25s;
+        }
+
+        .shape:nth-child(3) {
+            top: 50%;
+            left: 30%;
+            animation-duration: 30s;
+        }
+
+        .shape:nth-child(4) {
+            top: 70%;
+            left: 80%;
+            animation-duration: 35s;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0) rotate(0);
+            }
+            50% {
+                transform: translate(50px, 50px) rotate(180deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .slide-in {
+            animation: slideIn 2s ease-in-out;
+        }
+
+        .bounce-in {
+            animation: bounceIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="fade-in">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello, I'm Ahmed Hassan Ahmed Hussein, a Data Engineer.</p>
+    </section>
+
+    <section id="about" class="slide-in">
+        <h1>About Me</h1>
+        <p>A dedicated and results-driven data engineer with a solid background in Computer and Data Science. Currently advancing my studies in data engineering, focusing on the latest methods and technologies to build strong data systems. Skilled in analyzing complex datasets, creating efficient data pipelines, and improving workflows to get useful insights. I aim to use my knowledge and experience to create impactful solutions and add value in the field of data engineering. Passionate about working with diverse teams to solve tough problems and contribute to meaningful projects.</p>
+    </section>
+
+    <section id="skills" class="bounce-in">
+        <h1>Skills</h1>
+        <ul>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Python</li>
+            <li>ETL</li>
+            <li>Web Scraping</li>
+            <li>Pipelines</li>
+            <li>Data Warehousing</li>
+            <li>Agile</li>
+            <li>Data Cleaning</li>
+            <li>Microsoft Azure</li>
+        </ul>
+    </section>
+
+    <section id="certificates">
+        <h1>Certificates</h1>
+        <ul>
+            <li><a href="https://coursera.org/share/1f1b86ff05c775406fa5306cbeac7292" target="_blank">Python Project for Data Engineering</a></li>
+            <li><a href="https://coursera.org/share/91823150a9d730ad76971a14e97b45bf" target="_blank">Python for Data Science, AI & Development</a></li>
+            <li><a href="https://coursera.org/share/473ca737f275bad94b8a43ade007c24a" target="_blank">Introduction to Data Engineering</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>Email: <a href="mailto:ahmedhassanah027724@gmail.com">ahmedhassanah027724@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-hassan-3296262b5/" target="_blank">LinkedIn Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ahmed Hassan Ahmed Hussein</p>
+    </footer>
+</body>
+</html>
